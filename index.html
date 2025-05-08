@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Mecca Surya - Software & Hardware Developer" />
+  <meta name="author" content="Mecca Surya" />
+  <title>Portofolio Mecca Surya</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Basic Style for Body */
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar Sticky */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #1f1f1f;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero img {
+      border: 5px solid white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Dark Mode Button */
+    .btn-darkmode {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 2000;
+    }
+
+    /* Card Hover Effect */
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+/* Ukuran Seragam untuk Gambar Pendidikan */
+.pendidikan-img {
+  height: 160px;       /* Sesuaikan tinggi gambar */
+  object-fit: contain; /* Biar tidak terpotong tapi proporsional */
+  width: 100%;
+  padding: 10px;
+}
+
+/* Skill Section */
+.skill-logo {
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .skill-logo {
+    height: 80px;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mecca Surya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <img src="image copy.png" alt="Foto Profil" class="rounded-circle mb-3" width="180">
+    <h1 class="fw-bold">Mecca Surya</h1>
+    <h4><span id="typed"></span></h4>
+    <a href="#skill" class="btn btn-outline-light mt-4">LIHAT SKILL</a>
+  </section>
+
+  <!-- Banner Section -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#1f1f1f" fill-opacity="1" d="M0,64L288,160L576,96L864,224L1152,32L1440,128L1440,0L1152,0L864,0L576,0L288,0L0,0Z"></path>
+  </svg>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Tentang Saya</h2>
+      <p class="lead text-center">Nama saya Mecca, seorang siswa di SMK Negeri Mojoagung dengan fokus pada jurusan Rekayasa Perangkat Lunak (RPL). Di sini, saya mempelajari berbagai aspek penting dalam dunia teknologi, terutama yang berkaitan dengan pemrograman dan sistem basis data. Setiap hari, saya terbiasa berkutat dengan baris-baris kode, memahami struktur logika program, serta mempelajari cara mengelola data secara efektif dan terstruktur. Saya semakin tertarik dengan dunia pengembangan perangkat lunak karena bidang ini terus berkembang dan penuh tantangan. Bagi saya, menjadi seorang programmer bukan hanya soal menulis kode, tetapi juga tentang menciptakan solusi yang dapat digunakan oleh banyak orang. Dengan semangat belajar yang tinggi dan keinginan untuk terus berkembang, saya yakin kemampuan saya akan semakin matang dan dapat memberikan kontribusi nyata di dunia digital.</p>
+    </div>
+  </section>
+
+  <!-- Pendidikan Section -->
+<section id="pendidikan" class="py-5 bg-light" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5">Pendidikan</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card pendidikan-card h-100 text-center">
+          <img src="sd.jpg" class="card-img-top pendidikan-img" alt="SD">
+          <div class="card-body">
+            <h6 class="card-title fw-bold">Sekolah Dasar Negeri Sidokare 3 </h6>
+            <p class="card-text">2013/2014 - 2019/2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card pendidikan-card h-100 text-center">
+          <img src="smp.png" class="card-img-top pendidikan-img" alt="SMP">
+          <div class="card-body">
+            <h6 class="card-title fw-bold">Sekolah Menengah Pertama</h6>
+            <p class="card-text">2020/2021 - 2022/2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card pendidikan-card h-100 text-center">
+          <img src="logo-smk.png" class="card-img-top pendidikan-img" alt="SMK">
+          <div class="card-body">
+            <h6 class="card-title fw-bold">Sekolah Menengah Kejuruan</h6>
+            <p class="card-text">2023/2024 - 2025/2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skill Section -->
+<section id="skill" class="py-5 bg-white" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5">Skill</h2>
+    <div class="row g-4 justify-content-center text-center">
+      <div class="col-6 col-md-3">
+        <img src="logo html.png" class="skill-logo" alt="HTML">
+        <p class="mt-2">HTML</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="logo css.png" class="skill-logo" alt="CSS">
+        <p class="mt-2">CSS</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="logo js.png" class="skill-logo" alt="JavaScript">
+        <p class="mt-2">JavaScript</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="logo php.png" class="skill-logo" alt="PHP">
+        <p class="mt-2">PHP</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="logo canva.png" class="skill-logo" alt="Canva">
+        <p class="mt-2">Canva</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src= "Capcut Logo.jpg" class="skill-logo" alt="CapCut">
+        <p class="mt-2">CapCut</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="logo figma.png" class="skill-logo" alt="Figma">
+        <p class="mt-2">Figma</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Modal Galeri -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" class="img-fluid rounded" alt="Modal Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Kontak Saya</h2>
+      <form id="contactForm" action="URL_GOOGLE_APPS_SCRIPT" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nama</label>
+          <input type="text" name="name" id="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Pesan</label>
+          <textarea name="message" id="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    var typed = new Typed('#typed', {
+      strings: ["Software Engineer", "Hardware Enthusiast", "Problem Solver"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("bg-dark");
+      document.body.classList.toggle("text-white");
+    }
+
+    function showImage(image) {
+      document.getElementById("modalImage").src = image.src;
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Mecca Surya • Dibuat dengan ❤️</p>
+    <p class="social-links">
+      <a href="https://www.instagram.com/aryx.life/" class="text-white me-2" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://wa.me/6285749368464" class="text-white" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>
